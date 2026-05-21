@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --navy: #1B2A4A;
+  --gold: #F5A623;
+  --cream: #F8F6F1;
+}
+
+html { scroll-behavior: smooth; }
+body { background: var(--cream); color: var(--navy); font-feature-settings: 'ss01','cv01'; }
+
+html[dir="rtl"] body { font-family: var(--font-tajawal), system-ui, sans-serif; }
+
+.section-label { @apply text-gold font-mono text-sm tracking-[0.3em] uppercase; }
+.h-display { @apply font-display font-bold leading-[1.05] tracking-tight; }
+
+.diag-bottom { clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%); }
+.diag-top    { clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 100%); }
+
+.grain::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.18 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  opacity: .35; mix-blend-mode: overlay;
+}
+
+.ticker {
+  display: flex; gap: 3rem; animation: ticker 40s linear infinite;
+  white-space: nowrap; width: max-content;
+}
+@keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+.nav-link { position: relative; }
+.nav-link::after {
+  content: ""; position: absolute; left: 0; bottom: -4px; height: 2px; width: 0;
+  background: var(--gold); transition: width .3s ease;
+}
+.nav-link:hover::after, .nav-link.active::after { width: 100%; }
+
+.btn-gold { @apply inline-flex items-center justify-center gap-2 bg-gold text-navy font-semibold px-7 py-3.5 rounded-sm hover:bg-gold-600 transition-all hover:-translate-y-0.5 shadow-lg shadow-gold/20; }
+.btn-outline { @apply inline-flex items-center justify-center gap-2 border border-gold text-gold font-semibold px-7 py-3.5 rounded-sm hover:bg-gold hover:text-navy transition-all; }
+
+.card-lift { @apply transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl; }
