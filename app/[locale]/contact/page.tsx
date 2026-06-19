@@ -9,8 +9,7 @@ export default function ContactPage() {
   const cards = [
     { icon: MapPin, label: "Address", value: t("address") },
     { icon: Phone,  label: "Phone",   value: t("phone") },
-    { icon: Mail,   label: "Email",   value: t("email") },
-    { icon: Building, label: "Registration", value: `${t("cr")} · ${t("vat")}` }
+    { icon: Mail,   label: "Email",   value: t("email") }
   ];
   return (
     <>
@@ -24,7 +23,7 @@ export default function ContactPage() {
       </section>
 
       <section className="py-20 max-w-7xl mx-auto px-6 lg:px-10">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5 mb-16">
+        <div className="grid md:grid-cols-3 gap-5 mb-16">
           {cards.map(c => (
             <div key={c.label} className="bg-white border border-navy/10 p-6">
               <c.icon className="text-gold mb-3" size={22}/>

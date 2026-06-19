@@ -36,8 +36,7 @@ export const translations = {
       formService: "Service Required", formMessage: "Message", formSubmit: "Send Message",
       success: "Thank you — we have received your message and will respond within one business day.",
       address: "P.O. Box Al Waly 14926, Riyadh, Kingdom of Saudi Arabia",
-      phone: "+966-55-664-4345", email: "support.spk@gmail.com",
-      cr: "CR: 7054055483", vat: "VAT: 314730539600003"
+      phone: "+966-55-664-4345", email: "support.spk@gmail.com"
     },
     footer: {
       tagline: "Keeping Your Business Running at Peak Efficiency",
@@ -82,8 +81,7 @@ export const translations = {
       formService: "الخدمة المطلوبة", formMessage: "رسالتك", formSubmit: "إرسال الرسالة",
       success: "شكراً — تم استلام رسالتك وسنرد عليك خلال يوم عمل واحد.",
       address: "ص.ب. الولي ١٤٩٢٦، الرياض، المملكة العربية السعودية",
-      phone: "+966-55-664-4345", email: "support.spk@gmail.com",
-      cr: "س.ت: 7054055483", vat: "الرقم الضريبي: 314730539600003"
+      phone: "+966-55-664-4345", email: "support.spk@gmail.com"
     },
     footer: {
       tagline: "نُبقي أعمالك تعمل بأعلى كفاءة",

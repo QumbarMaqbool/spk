@@ -50,10 +50,6 @@ function AboutTeaser({ locale }: { locale: string }) {
           <div className="section-label mb-4">03 — ABOUT US</div>
           <h2 className="h-display text-4xl md:text-5xl text-navy mb-6">{t("aboutHeading")}</h2>
           <p className="text-navy/75 leading-relaxed mb-6">{t("aboutBody")}</p>
-          <div className="flex gap-6 text-sm font-mono mb-8">
-            <div><div className="text-navy/50 uppercase text-xs tracking-widest">CR</div><div className="text-navy font-bold">7054055483</div></div>
-            <div><div className="text-navy/50 uppercase text-xs tracking-widest">VAT</div><div className="text-navy font-bold">314730539600003</div></div>
-          </div>
           <Link href={`/${locale}/about`} className="btn-gold">More About Us <ArrowRight size={18}/></Link>
         </div>
       </div>

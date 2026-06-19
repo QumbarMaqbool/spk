@@ -90,8 +90,8 @@ function Team() {
 
 function Credentials() {
   const items = [
-    { icon: Award, title: "Commercial Registration", desc: "CR No. 7054055483 — Issued by the Ministry of Commerce, Kingdom of Saudi Arabia" },
-    { icon: FileCheck, title: "VAT Registration", desc: "VAT No. 314730539600003 — ZATCA (Saudi Tax Authority)" },
+    { icon: Award, title: "Commercial Registration", desc: "Issued by the Ministry of Commerce, Kingdom of Saudi Arabia" },
+    { icon: FileCheck, title: "VAT Registration", desc: "Registered with ZATCA (Saudi Tax Authority)" },
     { icon: ShieldCheck, title: "GOSI Registration", desc: "Registered with the General Organization for Social Insurance" },
     { icon: Users, title: "Muqeem Registration", desc: "Compliant with Saudi labor and residency regulations" },
     { icon: Building, title: "Municipality License", desc: "Valid municipal business license — Riyadh Region" },

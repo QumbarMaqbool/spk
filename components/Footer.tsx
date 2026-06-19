@@ -44,14 +44,12 @@ export default function Footer({ locale }: { locale: string }) {
             <li className="flex gap-2"><MapPin size={16} className="mt-0.5 text-gold shrink-0"/>{contact("address")}</li>
             <li className="flex gap-2"><Phone size={16} className="text-gold shrink-0"/>{contact("phone")}</li>
             <li className="flex gap-2"><Mail size={16} className="text-gold shrink-0"/>{contact("email")}</li>
-            <li className="text-xs text-cream/60 pt-2">{contact("cr")} · {contact("vat")}</li>
           </ul>
         </div>
       </div>
       <div className="border-t border-cream/10">
         <div className="max-w-7xl mx-auto px-6 lg:px-10 py-5 text-xs text-cream/60 flex flex-wrap justify-between gap-2">
           <span>© 2025 SPK General Contracting & Trading Co. {t("rights")}</span>
-          <span>CR: 7054055483 · VAT: 314730539600003</span>
         </div>
       </div>
     </footer>
